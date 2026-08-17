@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julio Becerra</title>
-    <!-- Script de Cloudflare Turnstile -->
+    <!-- Script oficial de Cloudflare Turnstile -->
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <style>
         * {
@@ -34,15 +34,25 @@
             color: #0f172a;
             text-transform: uppercase;
         }
+        .captcha-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
 
     <header class="header-title">
-        <h1>Julio Becerra</h1>
-        <!-- Widget del Captcha debajo de tu nombre -->
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAETF3gMz96WvhKIf" style="margin-top: 20px;"></div>
+        <h1>JULIO BECERRA</h1>
     </header>
+
+    <!-- Contenedor del Captcha dentro de un Formulario -->
+    <form action="?" method="POST">
+        <div class="captcha-container">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAET3jgMc9W4vHKf"></div>
+        </div>
+    </form>
 
 </body>
 </html>
